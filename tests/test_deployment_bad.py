@@ -8,4 +8,3 @@ class TestBadDeployment:
         deployment = DeploymentBuilder().build_bad()
 
         verify(deployment)
-

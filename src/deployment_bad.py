@@ -13,4 +13,3 @@ class Deployment:
 
     def __repr__(self) -> str:
         return json.dumps(self.__dict__, indent=2)
-

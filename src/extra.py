@@ -34,9 +34,9 @@ class Container:
     env: list[EnvVar | EnvVarFromSecret] = field(default_factory=list)
     ports: list[Port] = field(default_factory=list)
 
+
 @dataclass
 class Metadata:
     name: str
     labels: dict[str, str]
     annotations: dict[str, str]
-

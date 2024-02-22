@@ -1,6 +1,6 @@
 import json
 
-from dataclasses import dataclass, field
+from dataclasses import dataclass
 from src.extra import Container, Metadata
 
 
@@ -12,5 +12,6 @@ class Deployment:
     service_account_name: str
 
     def __repr__(self) -> str:
-        return json.dumps(self.__dict__, indent=2, default=lambda o: o.__dict__) # <---- This default is the key!!!
-
+        return json.dumps(
+            self.__dict__, indent=2, default=lambda o: o.__dict__
+        )  # <---- This default is the key!!!
