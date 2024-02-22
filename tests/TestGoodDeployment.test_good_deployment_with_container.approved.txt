@@ -1,0 +1,21 @@
+{
+  "container": {
+    "image": "my-image",
+    "cpu": "1",
+    "memory": "512Mi",
+    "name": "my-container",
+    "env": [],
+    "ports": []
+  },
+  "metadata": {
+    "name": "any-name",
+    "labels": {
+      "app": "any-app"
+    },
+    "annotations": {
+      "author": "any-author"
+    }
+  },
+  "replicas": 1,
+  "service_account_name": "any-service-account-name"
+}
