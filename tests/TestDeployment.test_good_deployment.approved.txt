@@ -1,0 +1,38 @@
+{
+  "container": {
+    "image": "any-image",
+    "cpu": "any-cpu",
+    "memory": "any-memory",
+    "name": "any-name",
+    "env": [
+      {
+        "name": "ENV",
+        "value": "any-value"
+      },
+      {
+        "name": "secret",
+        "secret": {
+          "name": "secret",
+          "key": "key"
+        }
+      }
+    ],
+    "ports": [
+      {
+        "name": "http",
+        "number": 80
+      }
+    ]
+  },
+  "metadata": {
+    "name": "any-name",
+    "labels": {
+      "app": "any-app"
+    },
+    "annotations": {
+      "author": "any-author"
+    }
+  },
+  "replicas": 1,
+  "service_account_name": "any-service-account-name"
+}
